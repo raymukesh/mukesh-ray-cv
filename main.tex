@@ -1,0 +1,250 @@
+%-------------------------
+% Resume in LaTeX — Jake's Resume Style (MIT)
+% Author: Adapted for Mukesh Ray
+% Base: https://github.com/jakeryang/resume (Jake Gutierrez)
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+% Header / footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Fix for fancyhdr: set footskip to avoid warning
+\setlength{\footskip}{4.1pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure ATS-parsable PDF
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{\justifying #1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{%
+  \item \begin{minipage}[t]{0.78\textwidth}
+    \textbf{#1} \\
+    \textit{\small #3}
+  \end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{0.18\textwidth}
+    \raggedleft #2 \\
+    \raggedleft\textit{\small #4}
+  \end{minipage}\vspace{-7pt}%
+}
+\newcommand{\resumeProjectHeading}[2]{%
+  \item \small #1 \hfill #2 \vspace{-7pt}%
+}
+\newcommand{\resumePublicationHeading}[2]{%
+  \item \begin{minipage}[t]{0.78\textwidth}
+    \small #1
+  \end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{0.18\textwidth}
+    \raggedleft\small #2
+  \end{minipage}\vspace{-7pt}%
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{enumerate}[leftmargin=0.15in]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{enumerate}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, rightmargin=1in, itemsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+\begin{document}
+
+%================= HEADER =================
+\begin{center}
+  {\Huge \bfseries Mukesh Ray, PhD}\\[2pt]
+  {\small Lecturer \& Course Director-Urban Planning and Design (Online), University of Technology Sydney}\\
+  \vspace{2pt}
+  {\small \href{mailto:mukesh.ray@uts.edu.au}{mukesh.ray@uts.edu.au} $\vert$ \href{https://www.linkedin.com/in/ar-mukesh-ray/}{linkedin.com/in/ar-mukesh-ray}}
+\end{center}
+
+%================= ABOUT ME =================
+\section{About Me}
+\justifying
+Mukesh is an architect and urban planner by profession and lecturer of Urban Analytics, 
+Spatial Analysis (GIS) and Urban Projects within the Faculty of Design and Society at UTS. 
+He specialises in the application of computational geographic information system (GIS), 
+remote sensing and data science for large scale urban growth modelling, environmental assessment and energy. 
+His research focuses on evidence-based planning strategies for sustainable urban development that addresses the critical issues of our times such as rapid urbanisation, 
+rural-urban interaction and large-scale land use transformation. He has more than ten years of teaching experience in universities in India 
+and Australia.
+
+\vspace{0.5em}
+Mukesh has a PhD degree from UTS. His previous degree includes bachelor of 
+architecture from Visveswaraya National Institute of Technology (VNIT), 
+India and master degree in Urban and Rural Planning from Indian Institute of Technology (IIT) 
+Roorkee and Technische Universität Darmstadt, Germany (DAAD Scholarship recipient).
+
+%================= EDUCATION =================
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Technology Sydney (UTS)}{Sydney, Australia}
+      {PhD, School of Built Environment — Thesis: \emph{Analysing and predicting the geospatial transformation of the rural–urban fringe of Delhi Region in India}}{Mar 2018 -- Aug 2023}
+    \vspace{3pt}
+    
+    \resumeSubheading
+      {Indian Institute of Technology (IIT) Roorkee}{Roorkee, India}
+      {Master of Urban and Rural Planning}{2011 -- 2013}
+    \vspace{3pt}
+    
+    \resumeSubheading
+      {Technical University of Darmstadt (DAAD Scholar)}{Darmstadt, Germany}
+      {Exchange student for Master's dissertation (fully funded)}{2012 -- 2013}
+    \vspace{3pt}
+    
+    \resumeSubheading
+      {Visvesvaraya National Institute of Technology (VNIT) Nagpur}{Nagpur, India}
+      {Bachelor of Architecture}{2006 -- 2011}
+  \resumeSubHeadingListEnd
+
+%================= WORK EXPERIENCE =================
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Technology Sydney (UTS)}{Sydney, Australia}
+      {Course Director — Master of Urban Planning \& Master of Urban Design (Online)}{Aug 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Lead curriculum, accreditation preparation, and industry engagement across online planning and design programs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Technology Sydney (UTS)}{Sydney, Australia}
+      {Lecturer, School of Built Environment}{Oct 2021 -- Present}
+      \resumeItemListStart
+        \resumeItem{Teach Spatial Analysis (GIS), Urban Analytics, Urban Design Fundamentals, and Major/Minor Project (Planning Research).}
+        \resumeItem{Supervise HDR projects on street-greenery carbon sequestration and sustainable urban transformation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Technology Sydney (UTS)}{Sydney, Australia}
+      {Sessional Lecturer (Casual Academic)}{Mar 2019 -- Sep 2021}
+      \vspace{5pt}
+
+    \resumeSubheading
+      {G. D. Goenka University}{Gurgaon, India}
+      {Assistant Professor, School of Architecture \& Planning}{Aug 2015 -- Feb 2018}
+      \resumeItemListStart
+        \resumeItem{Curriculum development; subject coordination; workshops; conferences.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Arch10 Design Consultants}{Gurgaon, India}
+      {Architect–Urban Planner}{Jun 2014 -- Jun 2015}
+      \resumeItemListStart
+        \resumeItem{Residential, commercial, and industrial design; master planning; landscape design; business development.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lovely Professional University (LPU)}{Punjab, India}
+      {Assistant Professor, School of Architecture \& Design}{Aug 2013 -- May 2014}
+      \resumeItemListStart
+        \resumeItem{Lectures, curriculum development, International Student Committee in–charge; workshops; conferences.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%================= SELECTED PROJECTS =================
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumePublicationHeading{\textbf{Scaling Up Urban Nature: Lessons from Australia on Community-Driven, Equitable Climate Solutions in Land Use Planning} $\vert$ Lincoln Institute of Land Policy (USA)}{2024 -- 2025}
+      \resumeItemListStart
+        \resumeItem{The objective of this research is to draw lessons from Australia on how land use planning policies can support scaling up community-driven nature-based solutions in cities and support the global aim of designing equitable land-based climate change mitigation strategies that maximise social and environmental benefits to local communities.}
+      \resumeItemListEnd
+
+    \resumePublicationHeading{\textbf{Granville Smart Precinct Pilot} $\vert$ UTS $\times$ Cumberland Council}{2020}
+      \resumeItemListStart
+        \resumeItem{This project aimed to develop data-driven, sustainable, and community-focused planning solutions for the Granville Smart Precinct. Extensive analysis of demographic, socio-economic, environmental, and mobility datasets was conducted to identify urban challenges and spatial patterns within the precinct. Advanced GIS tools and data visualization techniques were employed to provide insights that guided strategic decision-making and informed master planning efforts. These insights were critical in proposing innovative urban solutions that align with Cumberland Council's vision for a resilient, smart precinct, fostering sustainable growth and enhancing community well-being.}
+      \resumeItemListEnd
+
+    \resumePublicationHeading{\textbf{Residential Energy Analytics} $\vert$ IKEA x UTS Future Living Lab}{2020 -- 2021}
+      \resumeItemListStart
+        \resumeItem{This project focused on analysing extensive energy datasets gathered from smart sensors in households across Australia to gain insights into residential energy consumption patterns. Data management, validation, analysis, and visualisation to uncover detailed usage trends over a one-year period. The insights generated from this data were instrumental in understanding how households consume energy and informed the development of sustainable living solutions. Aligned with IKEA's mission to encourage energy-efficient and smart living environments, the project provided valuable data-driven recommendations to promote sustainable practices within residential spaces.}
+      \resumeItemListEnd
+
+    \resumePublicationHeading{\textbf{Growing Food and Density Together} $\vert$ Urban Food Systems in Green Spaces}{2018}
+      \resumeItemListStart
+        \resumeItem{This project explored the potential for integrating urban food production within Sydney's green spaces to support a sustainable, higher-density urban environment. It involved conducting detailed surveys to identify suitable green areas and compiling data to inform the design of rooftop and community gardens. The project aimed to enhance local food security by leveraging underutilised urban spaces for food production, promoting resilience and sustainable practices in urban communities. Through these efforts, the initiative provided a model for integrating food systems within urban planning, demonstrating how cities can balance density with green infrastructure to benefit residents.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%================= TECHNICAL SKILLS =================
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item[] {\small
+    \textbf{GIS and Remote Sensing:} ArcGIS, QGIS, Google Earth Engine, SNAP, TerrSet \\
+    \textbf{Computational Tools:} Python, R, Pandas, NumPy, scikit-learn, TensorFlow (basics) \\
+    \textbf{Data Visualisation:} Tableau, Power BI, Excel \\
+    \textbf{Design:} AutoCAD, Revit, SketchUp, Adobe Suite (Photoshop, Illustrator, InDesign) \\}
+\end{itemize}
+
+%================= AWARDS & SCHOLARSHIPS =================
+\section{Awards \& Scholarships}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{UTS Course \& Subject Performance Commendation}{2019, 2022}
+    \resumeProjectHeading{International Research Scholarship (PhD); UTS President's Scholarship (PhD)}{2018 -- 2021}
+    \resumeProjectHeading{DAAD–IIT Master Sandwich Scholarship, TU Darmstadt (fully funded)}{2012 -- 2013}
+    \resumeProjectHeading{GATE Scholarship (Govt. of India) for Master's at IIT Roorkee}{2011 -- 2013}
+  \resumeSubHeadingListEnd
+
+%================= PUBLICATIONS =================
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumePublicationHeading{Ray, M., Pant, A., Pradhan, B. \emph{Spatiotemporal Dynamics of Desertification in Rajasthan (1990–2020), India: A Machine Learning and Remote Sensing Approach Using Google Earth Engine}.}{Under Review, 2025}
+    \resumePublicationHeading{Ray, M. \emph{Analysing and predicting the geospatial transformation of the rural–urban fringe of Delhi Region in India}. PhD Thesis, University of Technology Sydney.}{2022}
+    \resumePublicationHeading{Ray, M., Ghosh, S., Wilkinson, S. \emph{Evaluating factors influencing the uncontrolled growth of urban–rural belt – a case study of Delhi, India}. Smart and Sustainable Built Environments (SASBE), Sydney, pp. 134–142.}{2018}
+    \resumePublicationHeading{\emph{Health Risk Assessment and Mitigation Due to Infectious Diseases During Mass Gatherings — An Indian Perspective}. Proceedings of the 1st International Conference on Disaster and Risk Management, G. D. Goenka University, Gurgaon, India.}{2016}
+    \resumePublicationHeading{\emph{A critical study and recommendation on accessibility, connectivity and land use of Delhi Metro stations}. Proceedings of the Neo-International Conference on Habitable Environments, LPU, Punjab, India.}{2014}
+  \resumeSubHeadingListEnd
+
+%================= PHD SUPERVISION =================
+\section{PhD Supervision}
+
+\begin{enumerate}
+    \item Hongming Yan — Towards low-carbon green streets: Modelling street–greenery carbon storage and sequestration capacity using computer vision approaches (Co-supervisor).
+    \item Shawly Shamira — Sustainable Urban Transformation and Urban Vitality Dynamics: Investigating urban transformation and its influences on urban vitality (Co-supervisor).
+\end{enumerate}
+
+
+%================= MEMBERSHIP =================
+\section{Membership}
+\begin{enumerate}
+    \item Planning Institute of Australia (Full Member)
+    \item Council of Architecture, India
+\end{enumerate}
+
+\vspace{2pt}
+{\footnotesize Last updated: \today}
+
+\end{document}
